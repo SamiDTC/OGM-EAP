@@ -2,19 +2,68 @@ html {
   scroll-behavior: smooth;
 }
 
+p,a {
+  font-size: 20px;
+}
+
 body {
   margin: 0px;
   display: grid;
+  background-color: aliceblue;
 }
 
 * {
   font-family: 'Noto Sans';
 }
 
+#head-div {
+  grid-column: 1;
+  grid-row: 1;
+  width: 100%;
+  height: 40px;
+  background-color: aliceblue;
+  display: grid;
+}
+
+#head-div #b-div {
+  position: absolute;
+  right: 40px;
+  display: grid;
+  height: 30px;
+  padding: 5px;
+  gap: 40px;
+}
+
+#head-div h1 {
+  font-size: 30px;
+  margin: 0px;
+  padding-left: 5px;
+}
+
+#head-div #b-div .bttn {
+  position: relative;
+  z-index: 10;
+  color: black;
+  text-decoration: none;
+  display: flex;
+}
+
+#head-div #b-div #que-son-b {
+  grid-column: 1;
+}
+
+#head-div #b-div #tecnicas-b {
+  grid-column: 2;
+}
+
 #main-img {
   grid-column: 1;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: 50%;
   position: relative;
-  grid-row: 1;
+  grid-row: 2;
+  height: 400px;
   width: 100%;
   filter:brightness(40%);
 }
@@ -22,16 +71,16 @@ body {
 
 #main-title {
   font-family: cursive;
-  font-size: 70px;
+  font-size: clamp(2rem,4vw,6rem);
   margin: 0%;
   width: 100%;
-  height: 642px;
+  height: 400px;
   display: flex;
   justify-content: center;
   text-align: center;
   align-items: center;
   position: absolute;
   grid-column: 1;
-  grid-row: 1;
+  grid-row: 2;
   color: aliceblue;
 }
